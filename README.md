@@ -170,6 +170,8 @@ ServiceNow → All → *Service Catalog* → *Hardware Category*
 
 ### **Project Structure**
 
+```
+
 **Laptop-Request-Catalog-Item/**
 │
 ├── **Update Set/**
@@ -211,6 +213,7 @@ ServiceNow → All → *Service Catalog* → *Hardware Category*
     - Field becomes mandatory when visible.
     - Reset button clears the form successfully.
 
+```
 ---
 
 ### **Outcome**
