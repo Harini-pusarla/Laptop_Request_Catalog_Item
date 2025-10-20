@@ -172,42 +172,42 @@ ServiceNow → All → *Service Catalog* → *Hardware Category*
 
 ```
 
-**Laptop-Request-Catalog-Item/**
+Laptop-Request-Catalog-Item/
 │
-├── **Update Set/**
-│  └── *Laptop Request* (Local Update Set created to capture all configuration changes)
+├── Update Set/
+│  └── Laptop Request (Local Update Set created to capture all configuration changes)
 │
-├── **Service Catalog Item/**
-│  └── *Laptop Request*
+├── Service Catalog Item/
+│  └── Laptop Request
 │    ├── Name: Laptop Request
 │    ├── Catalog: Service Catalog
 │    ├── Category: Hardware
 │    └── Short Description: Use this item to request a new laptop
 │
-├── **Variables/**
+├── Variables/
 │  ├── Laptop Model – (Single Line Text)
 │  ├── Justification – (Multi Line Text)
 │  ├── Additional Accessories – (Checkbox)
 │  └── Accessories Details – (Multi Line Text, shown only when checkbox is selected)
 │
-├── **Catalog UI Policy/**
-│  └── *Show Accessories Details*
+├── Catalog UI Policy/
+│  └── Show Accessories Details
 │    ├── Condition: additional_accessories is true
 │    └── Action: Make accessories_details visible and mandatory
 │
-├── **UI Action/**
-│  └── *Reset Form*
+├── UI Action/
+│  └── Reset Form
 │    ├── Table: sc_cart
 │    ├── Client: True
 │    └── Script: Clears all form fields and shows an alert message
 │
-├── **Export Update Set/**
-│  └── *Laptop Request Project.xml* (exported for migration to other instances)
+├── Export Update Set/
+│  └── Laptop Request Project.xml (exported for migration to other instances)
 │
-├── **Retrieved Update Set/**
-│  └── *Laptop Request Project* (imported and committed on target instance)
+├── Retrieved Update Set/
+│  └── Laptop Request Project (imported and committed on target instance)
 │
-└── **Testing/**
+└── Testing/
   └── Verified the Laptop Request catalog item functionality:
     - Checkbox dynamically displays Accessories Details field.
     - Field becomes mandatory when visible.
